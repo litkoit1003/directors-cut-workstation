@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "org.litkoit.client.mixin",
+	"package": "org.litkoit.dcw.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
 	],

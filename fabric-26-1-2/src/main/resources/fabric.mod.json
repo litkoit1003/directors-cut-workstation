@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "directorscutworkstation",
 	"version": "${version}",
-	"name": "Directors Cut Workstation",
+	"name": "Director's Cut Workstation",
 	"description": "This mod will turn your Minecraft into a live streaming workstation.",
 	"authors": [
 		"litkoit"
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"org.litkoit.DirectorsCutWorkstation"
+			"org.litkoit.dcw.DirectorsCutWorkstation"
 		],
 		"client": [
-			"org.litkoit.client.DirectorsCutWorkstationClient"
+			"org.litkoit.dcw.client.DirectorsCutWorkstationClient"
 		]
 	},
 	"mixins": [

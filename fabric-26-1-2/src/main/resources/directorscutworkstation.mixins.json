@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "org.litkoit.mixin",
+	"package": "org.litkoit.dcw.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
 	],

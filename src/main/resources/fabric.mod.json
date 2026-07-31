@@ -2,13 +2,14 @@
 	"schemaVersion": 1,
 	"id": "directorscutworkstation",
 	"version": "${version}",
-	"name": "DirectorsCutWorkstation",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Directors Cut Workstation",
+	"description": "This mod will turn your Minecraft into a live streaming workstation.",
 	"authors": [
 		"litkoit"
 	],
 	"contact": {
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/litkoit1003/directors-cut-workstation",
+		"issues" : "https://github.com/litkoit1003/directors-cut-workstation/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/directorscutworkstation/icon.png",

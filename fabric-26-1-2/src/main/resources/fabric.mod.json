@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"org.litkoit.dcw.DirectorsCutWorkstation"
+			"org.litkoit.dcw.fabric.DirectorsCutWorkstationFabric"
 		],
 		"client": [
 			"org.litkoit.dcw.client.DirectorsCutWorkstationClient"

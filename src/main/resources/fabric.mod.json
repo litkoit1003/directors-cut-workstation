@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "directorscutworkstation",
+	"version": "${version}",
+	"name": "DirectorsCutWorkstation",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"litkoit"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/directorscutworkstation/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.litkoit.DirectorsCutWorkstation"
+		],
+		"client": [
+			"org.litkoit.client.DirectorsCutWorkstationClient"
+		]
+	},
+	"mixins": [
+		"directorscutworkstation.mixins.json",
+		{
+			"config": "directorscutworkstation.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

@@ -1,4 +1,5 @@
 plugins {
+	id("com.diffplug.spotless")
 	id("net.fabricmc.fabric-loom")
 	`maven-publish`
 }
@@ -63,6 +64,36 @@ tasks.jar {
 
 	from("LICENSE") {
 		rename { "${it}_$projectName" }
+	}
+}
+
+tasks.named("build") {
+	dependsOn("spotlessCheck")
+}
+
+spotless {
+	java {
+		eclipse()
+		removeUnusedImports()
+		trimTrailingWhitespace()
+		endWithNewline()
+	}
+
+	kotlin {
+		ktlint()
+	}
+
+	format("misc") {
+		target(
+			"*.md",
+			"*.json",
+			"*.toml",
+			"*.yml",
+			"*.yaml"
+		)
+
+		trimTrailingWhitespace()
+		endWithNewline()
 	}
 }
 

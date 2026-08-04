@@ -2,8 +2,13 @@ plugins {
     `java-library`
 }
 
+val lwjglVersion = "3.3.3"
+
 dependencies {
     compileOnly("org.slf4j:slf4j-api:2.0.16")
+    compileOnly("org.lwjgl:lwjgl:${lwjglVersion}")
+    compileOnly("org.lwjgl:lwjgl-glfw:${lwjglVersion}")
+    compileOnly("org.lwjgl:lwjgl-opengl:${lwjglVersion}")
 }
 
 java {

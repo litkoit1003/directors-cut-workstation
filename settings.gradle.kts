@@ -10,7 +10,6 @@ pluginManagement {
 
     plugins {
         id("net.fabricmc.fabric-loom") version providers.gradleProperty("loom_version").get()
-        id("com.diffplug.spotless") version providers.gradleProperty("spotless_version").get()
     }
 }
 

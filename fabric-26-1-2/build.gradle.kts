@@ -1,6 +1,5 @@
 plugins {
     id("net.fabricmc.fabric-loom")
-    id("com.diffplug.spotless")
     `maven-publish`
 }
 
@@ -41,17 +40,4 @@ java {
 
 tasks.withType<JavaCompile>().configureEach {
     options.release.set(25)
-}
-
-spotless {
-    java {
-        eclipse()
-        removeUnusedImports()
-        trimTrailingWhitespace()
-        endWithNewline()
-    }
-}
-
-tasks.named("build") {
-    dependsOn("spotlessCheck")
 }

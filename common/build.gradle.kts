@@ -2,7 +2,7 @@ plugins {
     `java-library`
 }
 
-val lwjglVersion = "3.4.2"
+val lwjglVersion = "3.4.3"
 
 dependencies {
     compileOnly("org.slf4j:slf4j-api:2.0.18")

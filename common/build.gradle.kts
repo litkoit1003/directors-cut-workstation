@@ -5,7 +5,7 @@ plugins {
 val lwjglVersion = "3.4.2"
 
 dependencies {
-    compileOnly("org.slf4j:slf4j-api:2.0.18")
+    compileOnly("org.slf4j:slf4j-api:2.0.19")
     compileOnly("org.lwjgl:lwjgl:${lwjglVersion}")
     compileOnly("org.lwjgl:lwjgl-glfw:${lwjglVersion}")
     compileOnly("org.lwjgl:lwjgl-opengl:${lwjglVersion}")
